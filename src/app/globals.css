@@ -1,9 +1,41 @@
+:root{
+    --color-fucsia: rgb(255, 0, 128);
+    --color-violeta: rgb(138, 43, 226);
+    --color-cian: rgb(0, 229, 255);
+    --color-lima: rgb(170, 255, 0);
+    --color-naranja: rgb(255, 111, 0);
+    --color-amarillo: rgb(255, 214, 0);
+    --color-rojo: rgb(255, 23, 68);
+    --color-oscuro: rgb(18, 10, 38);
+    --color-claro: rgb(255, 255, 255);
+}
+
 body{
   width: 100%;
     height: 100vh;
-    background-color: #d6d6d6;
+    background-color: rgb(18, 10, 38);
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 0, 128, 0.55), rgba(255, 0, 128, 0) 45%),
+        radial-gradient(circle at 85% 15%, rgba(0, 229, 255, 0.5), rgba(0, 229, 255, 0) 45%),
+        radial-gradient(circle at 50% 95%, rgba(170, 255, 0, 0.45), rgba(170, 255, 0, 0) 50%),
+        linear-gradient(135deg, rgb(138, 43, 226), rgb(18, 10, 38) 60%);
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+h1, h2, h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 12px rgba(0, 229, 255, 0.75);
+}
+
+::selection{
+    background-color: rgb(255, 0, 128);
+    color: rgb(255, 255, 255);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.65);
 }
